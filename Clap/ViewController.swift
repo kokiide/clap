@@ -7,10 +7,15 @@
 //
 
 import UIKit
-import AVFoundation
+import AVFoundation 
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
+    @available(iOS 2.0, *)
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+
     @IBOutlet var clapPickerView: UIPickerView!
     
         var audioplayer : AVAudioPlayer!
